@@ -2,7 +2,7 @@ console.log('contact');
 const appDOM = document.getElementById('app');
 appDOM.innerHTML = `
 <header>
-    <img src="#" alt="Logo">
+    
     <nav>NAV</nav>
 
 </header>
@@ -12,25 +12,25 @@ appDOM.innerHTML = `
 const navDOM = document.querySelector('nav');
 const mainLinksData = [
     {
-        home: 'Home',
+        name: 'Home',
         link: '../'
     },
     {
-        home: 'About',
+        name: 'About',
         link: '../about-us/'
     },
     {
-        home: 'Products',
+        name: 'Products',
         link: '../products/'
     },
     {
-        home: 'Contact',
+        name: 'Contact',
         link: '../contact/'
     },
 ];
 console.log(navDOM)
 for (const data of mainLinksData) {
-    navDOM.innerHTML += `<a href="${data.link}">${data.home}</a> `
+    navDOM.innerHTML += `<a href="${data.link}">${data.name}</a> `
 }
 navDOM.style.fontSize = '2rem';
 navDOM.style.margin = '1rem 2rem';
