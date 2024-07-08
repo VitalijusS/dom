@@ -1,3 +1,5 @@
+import { header } from "../js/header.js";
+const headerDOM = document.querySelector('body')
 const pokemons = [
     {
         name: 'Charizard',
@@ -86,11 +88,12 @@ console.log(appDOM)
 for (const pokemon of pokemons) {
     appDOM.innerHTML +=
         `<article>
-            <img src="${pokemon.picture}" alt="${pokemon.name} picture">
-            <h2 style="color:${pokemon.color.toLowerCase()}">${pokemon.name}</h2>
-            <p><span>Type:</span> ${pokemon.type}</p>
-            <p><span>Weaknesses:</span> ${pokemon.Weaknesses}</p>
-            <a target=”_blank” href="${pokemon.more}">Read more</a>
-        </article>
-        `
+    <img src="${pokemon.picture}" alt="${pokemon.name} picture">
+    <h2 style="color:${pokemon.color.toLowerCase()}">${pokemon.name}</h2>
+    <p><span>Type:</span> ${pokemon.type}</p>
+    <p><span>Weaknesses:</span> ${pokemon.Weaknesses}</p>
+    <a target=”_blank” href="${pokemon.more}">Read more</a>
+    </article>
+    `;
 }
+headerDOM.innerHTML = header() + headerDOM.innerHTML;
