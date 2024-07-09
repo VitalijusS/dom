@@ -1,8 +1,7 @@
 // import { header } from "../js/header";
 // header()
 import { header } from "../js/header.js";
-const headerDOM = document.querySelector('body')
-headerDOM.innerHTML = header() + headerDOM.innerHTML;
+header();
 console.log('about us js ')
 
 const h1DOM = document.getElementById('title');

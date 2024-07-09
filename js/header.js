@@ -1,8 +1,8 @@
 
-export function header(a) {
-    a === '.' ? a = '.' : a = '..';
+export function header(a = false) {
+    a ? a = '.' : a = '..';
 
-    return `    
+    const HTML = `    
     <header>
         <nav>
             <a href="${a}/index.html">home</a>
@@ -15,7 +15,6 @@ export function header(a) {
         </nav>
     </header>`;
 
-
-
+    document.body.insertAdjacentHTML("afterbegin", HTML);
 }
 

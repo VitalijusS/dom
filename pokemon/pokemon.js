@@ -1,5 +1,4 @@
 import { header } from "../js/header.js";
-const headerDOM = document.querySelector('body')
 const pokemons = [
     {
         name: 'Charizard',
@@ -96,4 +95,4 @@ for (const pokemon of pokemons) {
     </article>
     `;
 }
-headerDOM.innerHTML = header() + headerDOM.innerHTML;
+header();

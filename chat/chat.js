@@ -1,6 +1,6 @@
 import { header } from "../js/header.js";
-const headerDOM = document.querySelector('body')
-headerDOM.innerHTML = header() + headerDOM.innerHTML;
+header();
+// headerDOM.innerHTML = header() + headerDOM.innerHTML;
 
 const data = ['asd', 'asdstg', 'cvxcv', 'dfghdftt', 'rtydrt', '<script>console.log("aaa")</script>sdfsdf <style>*{color:red;}</style>'
 ];
