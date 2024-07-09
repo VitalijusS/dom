@@ -1,8 +1,6 @@
 import { header } from "../js/header.js";
-const headerDOM = document.querySelector('body')
-headerDOM.innerHTML = header() + headerDOM.innerHTML;
+header();
 const contentDOM = document.getElementById('content')
-console.log(contentDOM)
 contentDOM.innerHTML = `
         <h1>test</h1>
         <ul>
